@@ -11,11 +11,8 @@
             $subject = "Testing PHP mail functionality";
 
             $body = "From: " . $name . "\nAt: " . $email . "\n\n" . $message;
-            if(mail($to,$subject,$message)){
-                $sent = true;
-            }else{
-                $sent = false;
-            }
+            mail($to,$subject,$message);
+            $sent = true;
         }
     }
 ?>
@@ -33,7 +30,7 @@ else:
 ?>
 <form action = "index.php" method = "post">
     <?php
-    echo '<h3 id = "indicator">PHP email form</h3>';
+    echo '<h3 id = "indicator">PHP emailing form</h3>';
     ?>
     <input name = "name" id = "name" type = "text" class = "text-input" placeholder = "Your name..." required/>
     <input name = "email" id = "email" type = "email" class = "text-input" placeholder = "Your email..." required/>
