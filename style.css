@@ -1,0 +1,95 @@
+body {
+    background: rgb(0, 150, 250);
+}
+
+form {
+    padding: 5%;
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    top: 100px;
+    left: 55%;
+    margin-left: -45%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 0.2);
+}
+
+#indicator {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-input {
+    animation: un-big 0.5s 1;
+    width: 80%;
+    font-family: "Raleway", sans-serif;
+    height: 20px;
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 5%;
+    outline: none;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgb(0, 150, 250);
+}
+
+#message {
+    padding: 5px;
+    animation: un-big 0.5s 1;
+    width: 80%;
+    height: 20%;
+    resize: none;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    margin-left: 5%;
+    background: rgba(0, 0, 0, 0);
+    font-family: "Raleway", sans-serif;
+    box-shadow: 0px 2px 0px 0px rgb(0, 150, 250);
+}
+
+#submit {
+    margin-top: 15px;
+    min-width: 80px;
+    border: none;
+    background: rgb(0, 150, 250);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background: rgb(0, 140, 240);
+}
+
+.text-input:hover {
+    animation: big 0.5s 1;
+    animation-fill-mode: forwards;
+}
+
+#message:hover {
+    animation: big 0.5s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes big {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes un-big {
+    100% {
+        transform: scale(1);
+    }
+    0% {
+        transform: scale(1.25);
+    }
+}
