@@ -32,7 +32,9 @@ if($sent):
 else:
 ?>
 <form action = "index.php" method = "post">
-    <h3 id = "indicator">PHP email form</h3>
+    <?php
+    echo '<h3 id = "indicator">PHP email form</h3>';
+    ?>
     <input name = "name" id = "name" type = "text" class = "text-input" placeholder = "Your name..." required/>
     <input name = "email" id = "email" type = "email" class = "text-input" placeholder = "Your email..." required/>
     <input name = "to" id = "email" type = "email" class = "text-input" placeholder = "Your friend's email..." required/>
@@ -44,4 +46,3 @@ endif;
 ?>
 </body>
 </html>
-
