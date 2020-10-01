@@ -7,5 +7,5 @@ $message = "The mail message was sent with the following mail setting:\r\nSMTP =
 $headers = "From: connerow1115@gmail.com";
 
 mail("connerow1115@gmail.com", "Testing", $message, $headers);
-echo "Check your email now....&lt;BR/>";
+echo "Tester.php has been updated";
 ?>
