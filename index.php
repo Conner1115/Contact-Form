@@ -32,7 +32,7 @@ if($sent):
 <?php
 else:
 ?>
-<form action = "tester.php" method = "post">
+<form action = "index.php" method = "post">
     <?php
     echo '<h3 id = "indicator">PHP emailing form</h3>';
     ?>
