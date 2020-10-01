@@ -12,7 +12,6 @@
 
             $body = "From: " . $name . "\nAt: " . $email . "\n\n" . $message;
             if(mail($to,$subject,$message)){
-            mail($to,$subject,$message);
                 $sent = true;
             }else{
                 $sent = false;
@@ -33,10 +32,6 @@ if($sent):
 <?php
 else:
 ?>
-    <h1 id = "valid-send">Error:  Message could not be sent</h1>    
-<?php
-endif;
-?>
 <form action = "tester.php" method = "post">
     <?php
     echo '<h3 id = "indicator">PHP emailing form</h3>';
@@ -48,5 +43,8 @@ endif;
     <input id = "submit" type = "submit" value = "Send Message"/>
 </form>
 
+<?php
+endif;
+?>
 </body>
 </html>
